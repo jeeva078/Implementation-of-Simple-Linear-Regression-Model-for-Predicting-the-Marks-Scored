@@ -21,11 +21,6 @@ Developed by: jeevanandam m
 RegisterNumber:  212222220017
 */
 
-
-Program to implement the simple linear regression model for predicting the marks scored.
-Developed by: Varadaram SK
-RegisterNumber:  202223040232
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
