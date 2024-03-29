@@ -8,18 +8,26 @@ To write a program to predict the marks scored by a student using the simple lin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1.Import the required libraries and read the dataframe.
+
+2.Assign hours to X and scores to Y.
+
+3.Implement training set and test set of the dataframe
+
+4.Plot the required graph both for test data and training data.
+
+5.Find the values of MSE , MAE and RMSE.
 
 ## Program:
 ```
-/*
+
 Program to implement the simple linear regression model for predicting the marks scored.
-Developed by: jeevanandam m
+Developed by: jeevnandam m
 RegisterNumber:  212222220017
-*/
+
+```
+```
+
 
 import pandas as pd
 import numpy as np
@@ -43,14 +51,14 @@ regressor.fit(x_train,y_train)
 y_pred = regressor.predict(x_test)
 print(y_pred)
 print(y_test)
-#Graph plot for training data
+## Graph plot for training data
 plt.scatter(x_train,y_train,color='black')
 plt.plot(x_train,regressor.predict(x_train),color='blue')
 plt.title("Hours vs Scores(Training set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
-#Graph plot for test data
+## Graph plot for test data
 plt.scatter(x_test,y_test,color='black')
 plt.plot(x_train,regressor.predict(x_train),color='red')
 plt.title("Hours vs Scores(Testing set)")
@@ -63,8 +71,8 @@ mae=mean_absolute_error(y_test,y_pred)
 print('MAE = ',mae)
 rmse=np.sqrt(mse)
 print("RMSE= ",rmse)
-```
 
+```
 ## Output:
 ![image](https://github.com/Jayakrishnan22003251/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/120232371/edba4363-a15d-435c-b6b7-1edd1c13d876)
 ![image](https://github.com/Jayakrishnan22003251/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/120232371/d3e7de67-ecf6-453c-94e4-4ccab53b97f1)
